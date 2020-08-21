@@ -27,6 +27,16 @@ h2 {
     line-height: 36px;
 }
 
+h3 {
+    font-size: 55px;
+    line-height: 36px;
+}
+
+h4 {
+    font-size: 35px;
+}
+
+
 a {
     text-decoration: none;
     color: #201E21;
@@ -39,6 +49,7 @@ button {
     font-size: 45px;
     line-height: 29px;
     padding: 10px 20px;
+    border: none;
 }
 
 ul {
@@ -84,11 +95,11 @@ header h1 {
 
 
 
-nav ul li {
+header nav ul li {
     display: inline-block;
 }
 
-nav ul {
+header nav ul {
     margin: 0;
 }
 
@@ -180,14 +191,6 @@ nav ul {
 }
 
 
-
-
-
-
-
-
-
-
 /*  READ MORE */
 
 .blogContent {
@@ -226,4 +229,64 @@ nav ul {
 .readMoreImage {
     float: left;
     width: 50%;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #FFe9e9;
+}
+
+.footerContainer {
+  
+    padding: 75px 0;
+}
+
+.footerNav {
+    float: left;
+    width: calc(25%);
+    margin-top: 25px;
+}
+
+
+.stayUpdated {
+    float: left;
+    width: calc(50%);
+    text-align: center;
+}
+
+.contact {
+    float: left;
+    width: calc(25%);
+    text-align: right;
+    margin-top: 20px;
+}
+
+.stayUpdated h3 {
+    margin-bottom: 35px;
+}
+
+.stayUpdated form {
+    margin-top: 10px;
+}
+
+.stayUpdated input {
+    height: 50px;
+    width: 66%;
+    float: left;
+}
+
+.stayUpdated placeholder {
+    color:  #201E21;
+}
+
+.stayUpdated button {
+    float: left;
+}
+
+.footerBottom {
+    background-color: #201E21;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
