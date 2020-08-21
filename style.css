@@ -157,8 +157,36 @@ nav ul {
 
 .links {
     background-color: #FFE9E9;
-    height: 100px;
+    
 }
+
+.links i {
+    color: #0178A5;
+}
+
+.links ul {
+    font-size: 35px;
+    padding: 50px 0;
+}
+
+.links ul li {
+    float: left;
+    text-align: center;
+    width: calc(33.3%);
+}
+
+.links h3 {
+    padding-top: 15px;
+}
+
+
+
+
+
+
+
+
+
 
 /*  READ MORE */
 
