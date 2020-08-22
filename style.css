@@ -153,7 +153,7 @@ header nav ul {
 
 .lastestExhibitions {
     background-color: #F7DAE8;
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 .lastestExhibitions h2 {
@@ -170,7 +170,6 @@ header nav ul {
 .lastestExhibitions li:nth-of-type(3n) {
     margin-right: 0;
 }
-
 
 /* LINKS SECTION */
 
@@ -189,14 +188,14 @@ header nav ul {
 
 .links ul {
     font-size: 35px;
-    padding: 50px 0;
+    padding: 50px 100px;
    
 }
 
 .links ul li {
     float: left;
     text-align: center;
-    width: calc(33.3%);
+    width: 33.3%;
 }
 
 .links h3 {
@@ -210,7 +209,7 @@ header nav ul {
     background-color: #F7DAE8;
 }
 
-.blogContent a {
+.blogContainer a {
     color: #fff;
     background-color: #A7059B;
     font-size: 35px;
@@ -218,32 +217,26 @@ header nav ul {
     padding: 5px 20px;
 }
 
-.blogContentTwo a {
-    margin-left: 100px;
-}
-.blog {
+.blogContainer {
     float: left;
     width: 50%;   
 }
 
 .blog h2 {
-    margin-top: 100px;
+    margin: 60px 0 20px ;
 }
 
 .blogContentOne p {
-    margin: 20px 80px 20px 0;
+    margin: 0px 60px 25px 0;
 }
 
-.blogContentTwo h2 {
-    margin-left: 100px;
+
+.blogContentTwo {
+    margin: 20px 20px 30px 100px;
 }
 
 .blogContentTwo p {
-    margin: 20px 20px 20px 100px;
-}
-
-.blogContentTwo button {
-    margin-left: 100px;
+    margin-bottom: 25px;
 }
 
 .readMoreImage {
@@ -258,7 +251,6 @@ footer {
 }
 
 .footerContainer {
-  
     padding: 75px 0;
 }
 
