@@ -28,7 +28,7 @@ h2 {
 
 h3 {
     font-size: 35px;
-    line-height: 36px;
+    line-height: 30px;
 }
 
 h4 {
@@ -38,6 +38,7 @@ h4 {
 a {
     text-decoration: none;
     font-family: 'East Sea Dokdo';
+    cursor: pointer;
 }
 
 button {
@@ -48,11 +49,11 @@ button {
     line-height: 29px;
     padding: 10px 20px;
     border: none;
+    cursor: pointer;
 }
 
 ul {
     list-style-type: none;
-    padding: 0;
 }
 
 nav a {
@@ -222,31 +223,27 @@ header nav ul {
     width: 50%;   
 }
 
-.blog h2 {
-    margin: 60px 0 20px ;
-}
-
-.blogContentOne p {
-    margin: 0px 60px 25px 0;
-}
-
-
-.blogContentTwo {
-    margin: 20px 20px 30px 100px;
-}
-
-.blogContentTwo p {
-    margin-bottom: 25px;
-}
-
 .readMoreImage {
     float: left;
     width: 50%;
 }
 
+
+.blog {
+    margin: 0px auto;
+    width: 80%;
+    padding-top: 75px;
+}
+
+.blog p {
+    margin: 22px 0;
+}
+
+
+
 /* FOOTER */
 
-footer {
+.contactContainer {
     background-color: #FFe9e9;
 }
 
@@ -275,7 +272,7 @@ footer {
 }
 
 .stayUpdated h3 {
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 
 .stayUpdated form {
@@ -287,17 +284,88 @@ footer {
     width: 66%;
     float: left;
     text-align: center;
-     color:  #201E21;
+    color:  #201E21;
 }
-
 
 .stayUpdated button {
     float: left;
 }
 
-.footerBottom {
+
+
+
+footer {
     background-color: #201E21;
     color: #fff;
     text-align: center;
     padding: 10px;
+}
+
+
+
+
+
+
+/*  MEDIA QUERIES  */
+
+@media (max-width: 1098px) {
+
+   .stayUpdated input {
+       float: none;
+       width: 70%;
+       
+   }
+
+    .stayUpdated button {
+        
+        float: none;
+        margin: 10px auto;
+       
+    }
+}
+
+@media (max-width: 1034px) {
+
+    
+    body {
+        line-height: 24px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+
+    .blog {
+        padding-top: 30px;
+    }
+
+    
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+/*     
+    .blogContainer {
+        float: none;
+        width: 50%;   
+    }
+
+    .readMoreImage {
+        float: none;
+        width: 50%;
+    } */
+
+    floats and things
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
 }
