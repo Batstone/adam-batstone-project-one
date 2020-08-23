@@ -273,7 +273,7 @@ header nav ul {
 
 .stayUpdated {
     float: left;
-    width: calc(50%);
+    width: 50%;
     text-align: center;
 }
 
@@ -299,7 +299,7 @@ header nav ul {
 
 .contact {
     float: left;
-    width: calc(25%);
+    width: 25%;
     text-align: right;
     margin-top: 20px;
 }
@@ -336,7 +336,6 @@ footer {
     .stayUpdated button {
         float: none;
         margin: 10px auto;
-       
     }
 }
 
@@ -586,6 +585,7 @@ footer {
 
     .newProductContentContainer a {
        margin: 0 25%;
+
     }
 
     .blog {
