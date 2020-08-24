@@ -1,7 +1,15 @@
 html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}*, *:before, *:after {box-sizing: inherit}.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-/* font-family: 'East Sea Dokdo', cursive;
-font-family: 'Roboto', sans-serif; */
+/* COLORS USED
+
+    Dark #201E21
+    Ocean Blue #0178A5
+    Barney Purple #A7059B
+    Very light pink #FFE9E9
+    Light pink #F7DAE8
+
+*/
+
 
 * {
     box-sizing: border-box;
@@ -16,7 +24,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'East Sea Dokdo', sans-serif;
+    font-family: 'East Sea Dokdo', cursive;
     padding: 0;
     margin: 0;
 }
@@ -50,8 +58,6 @@ button {
 
 ul {
     list-style-type: none;
-    padding: 0;
-   
 }
 
 nav a {
@@ -60,10 +66,24 @@ nav a {
     color: #201E21;
     line-height: 29px;
     letter-spacing: 0.2px;
+    padding: 15px;
 }
 
 img {
     width: 100%;
+}
+
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: #201E21;
+}
+  
+.skip-link:focus {
+    left: 650px;
 }
 
 header {
@@ -83,6 +103,19 @@ header nav ul li {
     margin-left: 5px;
 }
 
+header nav ul li {
+    float: left;
+}
+
+header nav ul {
+    margin: 0;
+}
+
+header nav a:hover,
+header nav a:focus {
+    border-bottom: 2px solid #201E21;
+}
+
 header i {
     color: #fff;
     display: none;
@@ -91,16 +124,8 @@ header i {
 header h1 {
     color: #201E21;
     font-size: 122px;
-    margin-top: 250px;
+    margin-top: 200px;
     line-height: 94.3px;
-}
-
-header nav ul li {
-    display: inline-block;
-}
-
-header nav ul {
-    margin: 0;
 }
 
 .wrapper {
@@ -184,6 +209,11 @@ header nav ul {
 
 .links i {
     color: #0178A5;
+}
+
+.links i:hover,
+.links i:focus {
+    color: #201E21;
 }
 
 .links ul {
@@ -271,6 +301,19 @@ header nav ul {
     margin-top: 25px;
 }
 
+.footerNav li {
+    margin-top: 5px;
+}
+
+.footerNav a {
+    padding: 3px;
+}
+
+.footerNav a:hover,
+.footerNav a:focus {
+    border-bottom: 2px solid #201E21;
+}
+
 .stayUpdated {
     float: left;
     width: 50%;
@@ -304,11 +347,18 @@ header nav ul {
     margin-top: 20px;
 }
 
-footer {
+footer,
+footer a {
     background-color: #201E21;
     color: #fff;
     text-align: center;
     padding: 10px;
+}
+
+footer a {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    padding: 0;
 }
 
 
@@ -417,6 +467,11 @@ footer {
 
 @media (max-width: 768px) {
 
+    
+    .skip-link:focus {
+        left: 25px;
+    }
+
     header {
         height: 80vh;
         background-image: url(./assets/group-4@2x.png);
@@ -461,7 +516,6 @@ footer {
     .newProductImgContainer {
         width: 100%;
         padding-top: 50px;
-      
     }
 
     .newProductImgContainer img {
@@ -484,9 +538,6 @@ footer {
         margin: 25px 0;
     }
 
-
-    /*  FIIIIIIIXXXX       */
-
     .lastestExhibitions {
         padding: 60px 0;
     }
@@ -494,11 +545,14 @@ footer {
     .lastestExhibitions h2 {
         margin-bottom: 75px;
     }
+
+    .lastestExhibitions ul {
+        padding: 0;
+    }
     
     .lastestExhibitions li {
         float: left;
-        margin-right: 25px;
-        width: calc(50% - 25px);
+        width: calc(50% - 20px);
     }
  
     .lastestExhibitions ul li:nth-of-type(2) {
@@ -508,6 +562,7 @@ footer {
     .lastestExhibitions ul li:last-child {
         display: none;
     }
+
     
     .links ul {
         font-size: 35px;
@@ -579,13 +634,21 @@ footer {
         font-size: 90%;
     }
 
+    .newProductImgContainer img {
+        width: 100%;
+        height: 300px;
+    }
+
     .newProductContentContainer {
         text-align: left;
     }
 
     .newProductContentContainer a {
        margin: 0 25%;
+    }
 
+    .links ul {
+        padding: 50px 25px;
     }
 
     .blog {

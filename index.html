@@ -12,33 +12,29 @@
 </head>
 
 <body>
+    <a href="#newProduct" class="skip-link">Skip to main content.</a>
 
-    <header>
+    <header id="home">
         <div class="wrapper">
             <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact</a></li>
+                <ul class="clearfix">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#newProduct">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-
-            <i class="fas fa-bars"></i>
-
-
-
+            <i class="fas fa-bars" aria-label="mobile menu navigation"></i>
             <h1>Paint Gallery</h1>
         </div>
     </header>
 
     <main>
-        <section class="newProduct">
+        <section class="newProduct" id="newProduct">
             <div class="wrapper clearfix">
                 <div class="newProductImgContainer">
-                    <img src="./assets/image-6@2x.png" alt="">
+                    <img src="./assets/image-6@2x.png" alt="A row of paint containers sitting on a shelf">
                 </div>
-
                 <div class="newProductContentContainer">
                     <h2>New product on the shelves</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus maiores, obcaecati
@@ -51,16 +47,13 @@
             </div>
         </section class="newProducts">
 
-
-
-
-        <section class="lastestExhibitions">
+        <section class="lastestExhibitions" id="lastestExhibitions">
             <div class="wrapper">
                 <h2>latest exhibitons</h2>
                 <ul class="clearfix">
-                    <li><img src="./assets/gallery-image-1@2x.png" alt=""></li>
-                    <li><img src="./assets/gallery-image-3@2x.png" alt=""></li>
-                    <li><img src="./assets/gallery-image-2@2x.png" alt=""></li>
+                    <li><img src="./assets/gallery-image-1@2x.png" alt="Paint on a canvas, colors mixed together"></li>
+                    <li><img src="./assets/gallery-image-3@2x.png" alt="Open paint cans and lids on a white sheet"></li>
+                    <li><img src="./assets/gallery-image-2@2x.png" alt="Dried paint on a canvas"></li>
                 </ul>
             </div>
         </section>
@@ -68,26 +61,23 @@
         <section class="links">
             <div class="wrapper">
                 <ul class="clearfix">
-                    <li><a href="" aria-label="FILL THIS IN!!" aria-hidden="true"><i class="far fa-images"></i>
+                    <li><a href="" aria-hidden="true"><i class="far fa-images"></i>
                             <h3>catologue</h3>
                         </a></li>
-                    <li><a href="" aria-label="FILL THIS IN!!" aria-hidden="true"><i class="far fa-calendar-alt"></i>
+                    <li><a href="" aria-hidden="true"><i class="far fa-calendar-alt"></i>
                             <h3>events</h3>
                         </a></li>
                     <li>
-                        <a href="" aria-label="FILL THIS IN!!" aria-hidden="true"><i class="far fa-handshake"></i>
+                        <a href="" aria-hidden="true"><i class="far fa-handshake"></i>
                             <h3>collaborations</h3>
                         </a></li>
                 </ul>
             </div>
         </section>
 
-
-        <section class="blogContent clearfix">
-
-
-            <img class="readMoreImage1" src="./assets/right-image@2x.png" alt="">
-
+        <section class="blogContent clearfix" id="blog">
+            <img class="readMoreImage1" src="./assets/right-image@2x.png"
+                alt="A bunch of paint brushes covered in different oclors of paint">
             <div class="wrapper clearfix">
                 <div class="blog1 blog">
                     <h2>Finding the right brushes</h2>
@@ -102,9 +92,8 @@
                     <a>readmore</a>
                 </div>
             </div>
-
-            <img class="readMoreImage2 clearfix" src="./assets/left-image@2x.png" alt="">
-
+            <img class="readMoreImage2 clearfix" src="./assets/left-image@2x.png"
+                alt="An artist dipping a brush into a paint can">
             <div class="wrapper clearfix">
                 <div class="blog2 blog">
                     <h2>All kind of paints</h2>
@@ -121,20 +110,18 @@
             </div>
         </section>
 
-
     </main>
 
-    <section class="contactContainer">
+    <section class="contactContainer" id="contact">
         <div class="wrapper clearfix">
             <nav class="footerNav">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Gallery</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#newProduct">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-
             <div class="stayUpdated">
                 <h3>stay updated</h3>
                 <p>Subscribe to our newsletter to stay updated.</p>
@@ -143,7 +130,6 @@
                     <button>subscribe</button>
                 </form>
             </div>
-
             <div class="contact">
                 <h3>contact</h3>
                 <address>
@@ -155,8 +141,8 @@
         </div>
     </section>
 
-    <footer class>
-        <p>Copyright &#169 Juno</p>
+    <footer>
+        <p>Copyright &#169 Created At <a href="https://junocollege.com/">Juno College</a></p>
     </footer>
 </body>
 
